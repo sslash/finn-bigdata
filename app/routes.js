@@ -7,8 +7,4 @@ exports.actions = function(app, options) {
     app.get('/', function(req, res) {
         res.sendfile('index.html');
     });
-
-    app.get('/matrix', function(req, res){
-
-    });
 };

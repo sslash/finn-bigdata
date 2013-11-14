@@ -56,7 +56,16 @@ app.configure('development', function() {
 // routes
 require('./app/routes').actions(app, options);
 
-app.get('')
+app.get('/matrix', function(req, res){
+        var fs = require('fs')
+          , filename = "public/savedads.csv";
+
+        fs.readFile(filename, 'utf8', function(err, data) {
+          if (err) throw err;
+          console.log('OK: ' + filename);
+          res.send({'data' : data});
+        });
+    });
 
 // start host
 var port = 3000;
