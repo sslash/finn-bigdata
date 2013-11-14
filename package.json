@@ -17,7 +17,14 @@
     "karma-mocha": "~0.1.0",
     "karma-qunit": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
-    "karma-coverage": "~0.1.0"
+    "karma-coverage": "~0.1.0",
+      "express": ">= 2.5.0"
+    , "gzippo": ">= 0.0.1"
+    , "stylus": ">= 0.0.1"
+    , "nib" : ">= 0.0.1"
+    , "jade": ">= 0.0.1"
+    , "smoosh": ">= 0.2.x"
+    , "glob": ">= 0.0.1"
   },
 
   "peerDependencies": {
